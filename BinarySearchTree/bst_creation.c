@@ -1,0 +1,74 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include "BinarySearchTree.h"
+
+int main(){
+    struct BinarySearchTree *_1, *_2, *_3, *_4, *_5, *_6, *_7, *_8, *_9, *_10, *_11, *_12, *_13, *_14, *_15;
+    _1 = (struct BinarySearchTree*)malloc(sizeof(struct BinarySearchTree));
+    _2 = (struct BinarySearchTree*)malloc(sizeof(struct BinarySearchTree));
+    _3 = (struct BinarySearchTree*)malloc(sizeof(struct BinarySearchTree));
+    _4 = (struct BinarySearchTree*)malloc(sizeof(struct BinarySearchTree));
+    _5 = (struct BinarySearchTree*)malloc(sizeof(struct BinarySearchTree));
+    _6 = (struct BinarySearchTree*)malloc(sizeof(struct BinarySearchTree));
+    _7 = (struct BinarySearchTree*)malloc(sizeof(struct BinarySearchTree));
+    _8 = (struct BinarySearchTree*)malloc(sizeof(struct BinarySearchTree));
+    _9 = (struct BinarySearchTree*)malloc(sizeof(struct BinarySearchTree));
+    _10 = (struct BinarySearchTree*)malloc(sizeof(struct BinarySearchTree));
+    _11 = (struct BinarySearchTree*)malloc(sizeof(struct BinarySearchTree));
+    _12 = (struct BinarySearchTree*)malloc(sizeof(struct BinarySearchTree));
+    _13 = (struct BinarySearchTree*)malloc(sizeof(struct BinarySearchTree));
+    _14 = (struct BinarySearchTree*)malloc(sizeof(struct BinarySearchTree));
+    _15 = (struct BinarySearchTree*)malloc(sizeof(struct BinarySearchTree));
+    _9->data = 9;
+    _9->left = _8;
+    _9->right = _12;
+    _8->data = 8;
+    _8->left = _4;
+    _8->right = NULL;
+    _4->data = 4;
+    _4->left = _2;
+    _4->right = _6;
+    _2->data = 2;
+    _2->left = _1;
+    _2->right = _3;
+    _1->data = 1;
+    _1->left = NULL;
+    _1->right = NULL;
+    _3->data = 3;
+    _3->left = NULL;
+    _3->right = NULL;
+    _6->data = 6;
+    _6->left = _5;
+    _6->right = _7;
+    _5->data = 5;
+    _5->left = NULL;
+    _5->right = NULL;
+    _7->data = 7;
+    _7->left = NULL;
+    _7->right = NULL;
+    _12->data = 12;
+    _12->left = _10;
+    _12->right = _14;
+    _10->data = 10;
+    _10->left = NULL;
+    _10->right = _11;
+    _11->data = 11;
+    _11->left = NULL;
+    _11->right = NULL;
+    _14->data = 14;
+    _14->left = _13;
+    _14->right = _15;
+    _13->data = 13;
+    _13->left = NULL;
+    _13->right = NULL;
+    _15->data = 15;
+    _15->left = NULL;
+    _15->right = NULL;
+    printPreOrderBST(_9);
+    printf("\n");
+    printInOrderBST(_9);
+    printf("\n");
+    printPostOrderBST(_9);
+    printf("\n");
+    return 0;
+}
